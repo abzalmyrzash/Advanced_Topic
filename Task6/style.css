@@ -1,0 +1,51 @@
+
+.axis-grid line {
+    stroke: #def;
+}
+tr > td:nth-child(1) {
+    float: right;
+}
+
+.TSNE0 {
+    fill: red;
+    background-color: red;
+    color: white;
+}
+
+.UMAP0 {
+    fill: pink;
+    background-color: pink;
+}
+
+.TSNE1 {
+    fill: green;
+    background-color: green;
+    color: white;
+}
+
+.UMAP1 {
+    fill: lightgreen;
+    background-color: lightgreen;
+}
+
+.TSNE2 {
+    fill: blue;
+    background-color: blue;
+    color: white;
+}
+
+.UMAP2 {
+    fill: lightblue;
+    background-color: lightblue;
+}
+
+.centroid {
+    stroke-width:3;
+    stroke:black;
+    fill:orange;
+}
+
+.link {
+    stroke-width:5;
+    stroke:black;
+}

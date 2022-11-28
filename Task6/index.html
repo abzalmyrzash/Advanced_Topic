@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparison</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.6.1/d3.min.js" integrity="sha512-MefNfAGJ/pEy89xLOFs3V6pYPs6AmUhXJrRlydI/9wZuGrqxmrdQ80zKHUcyadAcpH67teDZcBeS6oMJLPtTqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: lightcyan; display: flex;" >
+<div>
+    <table>
+        <tbody>
+        <tr style="text-align: center;">
+            <td colspan="3"><h2>STATICTICS</h2></td>
+        </tr>
+        <tr>
+            <td> Algorithm </td>
+            <td> TSNE </td>
+            <td> UMAP </td>
+        </tr>
+<!--        <tr>-->
+<!--            <td> Intercluster distance </td>-->
+<!--            <td id="interclusterDistTSNE"></td>-->
+<!--            <td id="interclusterDistUMAP"></td>-->
+<!--        </tr>-->
+        <tr>
+            <td colspan="3"> Intracluster distance </td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td id="intraclusterDistTSNE0" class="TSNE0"></td>
+            <td id="intraclusterDistUMAP0" class="UMAP0"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td id="intraclusterDistTSNE1" class="TSNE1"></td>
+            <td id="intraclusterDistUMAP1" class="UMAP1"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td id="intraclusterDistTSNE2" class="TSNE2"></td>
+            <td id="intraclusterDistUMAP2" class="UMAP2"></td>
+        </tr>
+        <tr>
+            <td colspan="3">Number of elements in clusters</td>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td id="clusterCountTSNE0" class="TSNE0"></td>
+            <td id="clusterCountUMAP0" class="UMAP0"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td id="clusterCountTSNE1" class="TSNE1"></td>
+            <td id="clusterCountUMAP1" class="UMAP1"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td id="clusterCountTSNE2" class="TSNE2"></td>
+            <td id="clusterCountUMAP2" class="UMAP2"></td>
+        </tr>
+        </tbody>
+    </table>
+    <span><h2>CURRENTLY IN FOCUS : </h2> <br> <b><span id="currently"></span></b></span>
+    <span><h2>DISTANCE : </h2> <p id="distance"></p> </span>
+</div>
+<div id="wrapper">
+
+</div>
+</body>
+</html>
