@@ -21,8 +21,8 @@ async function buildPlot(){
     const y_scale = d3.scaleLinear()
         .range([dimension.height - dimension.margin.bottom - dimension.margin.top, dimension.margin.top]);
 
-    const x_label = "Time";
-    const y_label = "Temperatures";
+    const x_label = "Date";
+    const y_label = "Temperature (°F)";
 
     // add y label
     svg
@@ -34,7 +34,7 @@ async function buildPlot(){
                 (dimension.height - dimension.margin.top - dimension.margin.bottom + 180) / 2
             }) rotate(-90)`
         )
-        .style("font-size", "24px")
+        .style("font-size", "32px")
         .text(y_label);
     // add x label
     svg
@@ -43,7 +43,7 @@ async function buildPlot(){
         .attr("x", (dimension.width - dimension.margin.right + dimension.margin.left) / 2)
         .attr("y", dimension.height - dimension.margin.bottom - dimension.margin.top + 60)
         .attr("text-anchor", "middle")
-        .style("font-size", "24px")
+        .style("font-size", "32px")
         .text(x_label);
 
 
@@ -77,11 +77,11 @@ async function buildPlot(){
     x_scale.domain(d3.extent(data, dates)).nice(ticks);
     y_scale.domain(d3.extent(data, highTemp)).nice(ticks);
 
-    svg.append('path').attr("fill", "none").attr("stroke", "steelblue")
-        .attr("stroke-width", 1).attr('d', minimal(data)).attr('stroke', 'blue');
+    svg.append('path').attr("fill", "none")
+        .attr("stroke-width", 3).attr('d', minimal(data)).attr('stroke', 'green');
 
-    svg.append('path').attr("fill", "none").attr("stroke", "steelblue")
-        .attr("stroke-width", 1).attr('d', maximal(data)).attr('stroke', 'red');
+    svg.append('path').attr("fill", "none")
+        .attr("stroke-width", 3).attr('d', maximal(data)).attr('stroke', 'orange');
 
     const x_axis = d3.axisBottom()
         .scale(x_scale)
