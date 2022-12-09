@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0aecad01-7309-458b-bf7d-a8fb20985ff2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Task1/LinearPlot/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task1/LinearPlot/chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task1/LinearPlot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task1/LinearPlot/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LinearPlot.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task3/RandomDataPlot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task3/RandomDataPlot/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +37,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669988965186</updated>
-      <workItem from="1669988966511" duration="788000" />
+      <workItem from="1669988966511" duration="1244000" />
     </task>
     <servers />
   </component>

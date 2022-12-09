@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Topic modeling</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="chart"></div>
+  <div id="dropdown-container">
+    <label id="year-label">Year</label>
+    <select id="year-select"></select>
+    </br>
+  </div>
+  <div id="legends">
+    <b>Topic of research paper</b>
+    </br>
+    <svg class = "legend">
+      <rect class="SDC legend"></rect>
+    </svg> system, design, control
+    <br/>
+    <svg class = "legend">
+      <rect class="MDS legend"></rect>
+    </svg> mission, data, spacecraft
+    <br/>
+    <svg class = "legend">
+      <rect class="WMS legend"></rect>
+    </svg> wind, solar, magnetic
+  </div>
+</body>
+</html>

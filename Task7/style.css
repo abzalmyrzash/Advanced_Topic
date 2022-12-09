@@ -1,0 +1,45 @@
+#dropdown-container{
+    width: 75%;
+    margin-left: 100px;
+    float: left;
+}
+
+#legends{
+    float: left;
+}
+
+#year-label{
+    display: inline-block;
+    width: 50px
+}
+
+#month-label{
+    display: inline-block;
+    width: 50px
+}
+
+#year-select{
+    width: 60px;
+}
+
+#month-select{
+    width: 90px;
+    margin-left: 5px;
+}
+
+.legend {
+    width: 10px;
+    height: 10px;
+}
+
+.SDC{
+    fill: red;
+}
+
+.MDS{
+    fill: green;
+}
+
+.WMS{
+    fill: blue;
+}
